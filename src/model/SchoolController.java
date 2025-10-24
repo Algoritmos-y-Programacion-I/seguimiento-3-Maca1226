@@ -2,26 +2,21 @@ package model;
 
 public class SchoolController {
 
-    /*
-     * ATENCION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-     * Agregue los atributos (relaciones) necesarios para satisfacer los
-     * requerimientos.
-     */
+    private String name;
+    private int hourSpentSupport;
+    public static final int FLOORS = 5; 
+    public static final int COL = 10;
+    public static final int HOURMAXSUPPORT = 100;
+    private Computer[][] edificio;
 
-    public SchoolController() {
-
+    //constructor
+    public SchoolController(String name, int hourSpentSupport) {
+        this.name = name;
+        this.hourSpentSupport = hourSpentSupport;
+        this.edificio = new Computer[FLOORS][COL];
     }
 
-    /*
-     * ATENCION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-     * Los siguientes metodos estan incompletos.
-     * Añada los metodos que considere hagan falta para satisfacer los
-     * requerimientos.
-     * Para cada metodo:
-     * Agregue los parametros y retorno que sean pertinentes.
-     * Agregue la logica necesaria (instrucciones) para satisfacer los
-     * requerimientos.
-     */
+
     public void agregarComputador() {
 
     }
