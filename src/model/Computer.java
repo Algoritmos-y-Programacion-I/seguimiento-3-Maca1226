@@ -12,7 +12,7 @@ public class Computer {
         this.serialNumber = serialNumber;
         this.nextWindow = nextWindow;
         this.incidents = new ArrayList<>();
-        // en estos metodos hagos los getters y los setter de las dos variables
+        // en estos metodos hagos los getters y los setter de las dos variables que son serial numbre y next window
     }
     public String getSerialNumber(){
         return serialNumber;
@@ -33,6 +33,20 @@ public class Computer {
     */
     public void addIncident(Incident incidente) {
         incidents.add(incidente);
+    } /* descripción: este metodo es para los incidentes totales que estan registrados
+    @pre true
+    @post si hay algun cambio sobre la lista retornada no afecta a este objeto
+    @return número de incidentes
+    */
+    public int getIncidentCount() { 
+        return incidents.size(); 
+    } /* descripcióm: este metodo es para el arraylist de incidents, este el get para que retorne el arraylist
+    @pre true
+    @post si hay algun cambio sobre la lista retornada no afecta a este objeto
+    @return una nueva lista
+    */
+    public java.util.List<Incident> getIncidents() {
+    return new java.util.ArrayList<>(incidents);
     }
 
 

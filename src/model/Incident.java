@@ -13,8 +13,11 @@ public class Incident {
   public Incident(String description, LocalDate dateReport) {
     this.description = description;
     this.dateReport = dateReport;
+    this.solution = false;
+    this.solutionHours = 0;
     //aqui hago los métodos de getters y setters con cada una de las variables
   }
+
   public String getDescription(){
     return description;
   }
@@ -27,4 +30,17 @@ public class Incident {
   public void setDateReport(LocalDate dateReport) {
     this.dateReport = dateReport;
   }
+  public boolean getSolution() { 
+    return solution; 
+  }
+  public void setSolution(boolean solution) { 
+    this.solution = solution; 
+  }
+  public int getSolutionHours() {
+    return solutionHours;
+  }
+  public void setSolutionHours(int solutionHours) {
+    this.solutionHours = solutionHours;
+  }
+ 
 }
