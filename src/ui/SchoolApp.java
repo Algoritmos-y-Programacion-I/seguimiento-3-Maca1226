@@ -1,3 +1,17 @@
+/* Seguimiento #3
+COMPUTARICEMOS:
+Análisis: En este problema debemos de hacer un sistema en el cual se pueda registar los computadores que tienen incidentes
+y se muestre donde está ubicado para facilitarle al usuario cual es el computador que debe de arreglar.
+La institución tiene un edificio con 5 pisos y 10 columnas por piso (matriz 5x10) para ubicar computadores.
+En este caso cada computador tiene un serial único y la bandera “nextWindow”, los incidentes se registran
+con una descripción y una fecha.
+Este problema tiene tres requerimientos funcionales: Adicionar un computador, Registrar un incidente para un computador y
+Consultar el computador con más incidentes
+Este sistema tiene 4 clases que son: Computer, Incident, SchoolController y SchoolApp, cada uno tiene sus funciones
+Reglas a tener en cuenta: El serial no puede estar vacío y debe ser único en todo el edificio, piso (1-5) y columna (1-10),
+la descripción del incidente no puede estar vacía, al registrar computador se ubica en la primera columna libre del piso y
+si el piso está lleno o el serial ya existe se informa error.
+*/
 package ui;
 
 import java.util.Scanner;
